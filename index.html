@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/pages/index.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/computer.ico">
 </head>
 <body>
+<header>Header</header>
 
-<h1>Hello Everyone!</h1>
-<button id="about-open">About Me</button>
-<button id="projects-open">Projects</button>
-<button id="socials-open">Socials</button>
+<div>
+    <h1>Hello Everyone!</h1>
+    <button id="about-open">About Me</button>
+    <button id="projects-open"><img src="./assets/pngs/paint_old-0.png"/>Projects</button>
+    <button id="socials-open">Socials</button>
+</div>
 
 <div id="about" class="closable-window window-closed">
     <div class="window-hotbar">
@@ -19,13 +23,14 @@
         <button id="about-close" class="close-me">X</button>
     </div>
     <div class="window-content">
-        About Me!
+        Hello!<br>
+        I am Computer Science Technology Student that goes to Vanier.
     </div>
 </div>
 
 <div id="projects" class="closable-window window-closed">
     <div class="window-hotbar">
-        <div id="projects-dc"  class="draggable-component">Projects</div>
+        <div id="projects-dc"  class="draggable-component"><img src="./assets/icons/paint_old.ico" alt="projects icon"/><p>Projects</p></div>
         <button id="projects-close" class="close-me">X</button>
     </div>
     Projects!
@@ -40,7 +45,7 @@
 </div>
 
 
-
+<footer>&copy; 2025 Alexandru Cirlan</footer>
 <script src="javascript/main.js"></script>
 </body>
 </html>

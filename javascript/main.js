@@ -24,8 +24,8 @@ function main() {
         clickMe.addEventListener("click", (event) => {
             closableWindow.classList.remove("window-closed");
             closableWindow.classList.add("window-open");
-            closableWindow.style.top = "50%";
-            closableWindow.style.left = "50%";
+            closableWindow.style.top = "calc(50% - 100px)";
+            closableWindow.style.left = "calc(50% - 100px)";
         });
 
         closeMe.addEventListener("click", (event) => {
