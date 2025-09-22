@@ -1,15 +1,15 @@
 
 body {
-    color: var(--color-white-00);
+    /*color: var(--color-white-00);*/
 }
 
 button {
-    box-shadow: var(--color-white-01) -0.1em -0.1em 0 0;
+    /*box-shadow: var(--color-white-01) -0.1em -0.1em 0 0;*/
 
-    &:hover {
-        transform: translateY(0.1em) translateX(0.1em);
-        box-shadow: var(--color-white-01) 0 0 0 0;
-    }
+    /*&:hover {*/
+    /*    transform: translateY(0.1em) translateX(0.1em);*/
+    /*    box-shadow: var(--color-white-01) 0 0 0 0;*/
+    /*}*/
 }
 
 .closable-window {
