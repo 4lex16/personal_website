@@ -2,24 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
     <title>Home Page</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/pages/index.css">
     <link rel="icon" type="image/x-icon" href="./assets/icons/computer.ico">
 </head>
 <body>
-<header>Header</header>
+<header>
+    Header
+    <button id="lightingBtn">Change Mode</button>
+</header>
 
 <div>
     <h1>Hello Everyone!</h1>
-    <button id="about-open">About Me</button>
-    <button id="projects-open"><img src="./assets/pngs/paint_old-0.png"/>Projects</button>
-    <button id="socials-open">Socials</button>
+    <button id="about-open">
+        <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
+        About Me
+    </button>
+    <button id="projects-open">
+        <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
+        Projects
+    </button>
+    <button id="socials-open">
+        <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
+        Socials
+    </button>
 </div>
 
 <div id="about" class="closable-window window-closed">
     <div class="window-hotbar">
-        <div id="about-dc" class="draggable-component">About Me</div>
+        <div id="about-dc" class="draggable-component">
+            <img src="./assets/icons/paint_old.ico" alt="projects icon"/>
+            <p>About Me</p>
+        </div>
         <button id="about-close" class="close-me">X</button>
     </div>
     <div class="window-content">
@@ -30,7 +46,10 @@
 
 <div id="projects" class="closable-window window-closed">
     <div class="window-hotbar">
-        <div id="projects-dc"  class="draggable-component"><img src="./assets/icons/paint_old.ico" alt="projects icon"/><p>Projects</p></div>
+        <div id="projects-dc" class="draggable-component">
+            <img src="./assets/icons/paint_old.ico" alt="projects icon"/>
+            <p>Projects</p>
+        </div>
         <button id="projects-close" class="close-me">X</button>
     </div>
     Projects!
@@ -38,7 +57,10 @@
 
 <div id="socials" class="closable-window window-closed">
     <div class="window-hotbar">
-        <div id="socials-dc"  class="draggable-component">Socials</div>
+        <div id="socials-dc" class="draggable-component">
+            <img src="./assets/icons/paint_old.ico" alt="projects icon"/>
+            <p>Socials</p>
+        </div>
         <button id="socials-close" class="close-me">X</button>
     </div>
     Socials!

@@ -10,9 +10,16 @@ let draggableComponent;
 let draggingX;
 let draggingY;
 
+const colorScheme = document.documentElement;
+const lightingBtn = document.querySelector("#lightingBtn");
+
 document.addEventListener("DOMContentLoaded", main)
 
 function main() {
+    lightingBtn.addEventListener("click", () => {
+        colorScheme.classList.toggle("dark");
+    })
+
     closableWindows = document.querySelectorAll(".closable-window");
 
     for (const closableWindow of closableWindows) {

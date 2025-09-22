@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 button {
@@ -20,12 +21,14 @@ button {
     border-top: solid 1px transparent;
     border-left: solid 1px transparent;
 
+    color: var(--color-black-00);
+    background-color: var(--color-grey-00);
+
 
     border-bottom: solid 1px var(--color-black-00);
     border-right: solid 1px var(--color-black-00);
 
     &:active {
-
         border-top: solid 1px var(--color-black-00);
         border-left: solid 1px var(--color-black-00);
 
@@ -60,6 +63,8 @@ footer {
 
     color: black;
     padding: 0.1em;
+
+    user-select: text;
 
     background-color: var(--color-grey-00);
 }
