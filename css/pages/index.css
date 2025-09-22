@@ -1,0 +1,59 @@
+
+body {
+    color: var(--color-white-00);
+}
+
+button {
+    box-shadow: var(--color-white-01) -0.1em -0.1em 0 0;
+
+    &:hover {
+        transform: translateY(0.1em) translateX(0.1em);
+        box-shadow: var(--color-white-01) 0 0 0 0;
+    }
+}
+
+.closable-window {
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    color: black;
+    padding: 0.1em;
+
+    background-color: var(--color-grey-00);
+}
+
+.window-hotbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 1em;
+    padding: 0.2em 0.3em;
+    background-color: var(--color-blue-00);
+
+
+    & .draggable-component {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+
+        color: var(--color-white-01);
+    }
+
+    .close-me {
+        font-size: 1em;
+        width: 1em;
+        height: 1em;
+        background-color: var(--color-grey-00);
+    }
+}
+
+.window-open {
+    visibility: visible;
+}
+
+.window-closed {
+    visibility: hidden;
+}
