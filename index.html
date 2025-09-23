@@ -10,30 +10,39 @@
 </head>
 <body>
 <header>
-    Header
-    <button id="lightingBtn">Change Mode</button>
+    <button id="lightingBtn" class="sun-btn"><img src="./assets/pngs/sun.png" alt="sun jpg"/></button>
 </header>
 
-<div>
+<div class="page">
     <h1>Hello Everyone!</h1>
-    <button id="about-open">
-        <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
-        About Me
-    </button>
-    <button id="projects-open">
-        <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
-        Projects
-    </button>
-    <button id="socials-open">
-        <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
-        Socials
-    </button>
+    <div class="desktop-btns">
+        <button id="about-open" class="desktop-btn">
+            <img src="./assets/pngs/search_directory-5.png" alt="search directory icon"/>
+            About Me
+        </button>
+        <button id="links-open" class="desktop-btn">
+            <img src="./assets/pngs/world-4.png" alt="world icon"/>
+            Links
+        </button>
+        <button id="projects-open" class="desktop-btn">
+            <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
+            Projects
+        </button>
+        <button id="faq-open" class="desktop-btn">
+            <img src="./assets/pngs/help_sheet-0.png" alt="help sheet icon"/>
+            Faq
+        </button>
+        <button id="contacts-open" class="desktop-btn">
+            <img src="./assets/pngs/envelope_closed-0.png" alt="paint bucket icon"/>
+            Contact
+        </button>
+    </div>
 </div>
 
 <div id="about" class="closable-window window-closed">
     <div class="window-hotbar">
         <div id="about-dc" class="draggable-component">
-            <img src="./assets/icons/paint_old.ico" alt="projects icon"/>
+            <img src="./assets/icons/search_directory.ico" alt="about icon"/>
             <p>About Me</p>
         </div>
         <button id="about-close" class="close-me">X</button>
@@ -42,6 +51,17 @@
         Hello!<br>
         I am Computer Science Technology Student that goes to Vanier.
     </div>
+</div>
+
+<div id="links" class="closable-window window-closed">
+    <div class="window-hotbar">
+        <div id="links-dc" class="draggable-component">
+            <img src="./assets/icons/world.ico" alt="world icon"/>
+            <p>Socials</p>
+        </div>
+        <button id="links-close" class="close-me">X</button>
+    </div>
+    Socials!
 </div>
 
 <div id="projects" class="closable-window window-closed">
@@ -55,16 +75,28 @@
     Projects!
 </div>
 
-<div id="socials" class="closable-window window-closed">
+<div id="faq" class="closable-window window-closed">
     <div class="window-hotbar">
-        <div id="socials-dc" class="draggable-component">
-            <img src="./assets/icons/paint_old.ico" alt="projects icon"/>
-            <p>Socials</p>
+        <div id="faq-dc" class="draggable-component">
+            <img src="./assets/icons/help_sheet.ico" alt="faq icon"/>
+            <p>Frequently Asked Questions</p>
         </div>
-        <button id="socials-close" class="close-me">X</button>
+        <button id="faq-close" class="close-me">X</button>
     </div>
-    Socials!
+    Faq!
 </div>
+
+<div id="contacts" class="closable-window window-closed">
+    <div class="window-hotbar">
+        <div id="contacts-dc" class="draggable-component">
+            <img src="./assets/icons/envelope_closed.ico" alt="contacts icon"/>
+            <p>Contact Me!</p>
+        </div>
+        <button id="contacts-close" class="close-me">X</button>
+    </div>
+    Contact Me!
+</div>
+
 
 
 <footer>&copy; 2025 Alexandru Cirlan</footer>
