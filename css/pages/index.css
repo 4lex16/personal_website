@@ -1,4 +1,7 @@
+/* CSS file that affects all elements in the index.html */
 
+/* body applies to all content */
+/* Adds the background */
 body {
     width: 100vw;
     height: 100vh;
