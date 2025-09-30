@@ -10,7 +10,7 @@
     --color-blue-00: #010081;
     --color-blue-01: #5958ce;
     --color-grey-00: #bebebe;
-    --background-image: url("/assets/webp/light_mode.webp");
+    --background-image: url("../../assets/webp/light_mode.webp");
 }
 
 /* :root when in dark mode */
@@ -21,7 +21,7 @@
     --color-white-00: #000;
     --color-white-01: #f4fafb;
     --color-grey-00: #6a6b6b;
-    --background-image: url("/assets/webp/dark_mode.webp");
+    --background-image: url("../../assets/webp/dark_mode.webp");
 }
 
 /* Applies to all html elements */
