@@ -111,6 +111,15 @@ footer {
     user-select: text;
 
     background-color: var(--color-grey-00);
+
+    & .window-content {
+        width: calc(100% - 4em);
+        height: calc(100% - 6em);
+        padding: 1em;
+        margin: 1em;
+        color: var(--color-black-00);
+        background-color: var(--color-white-00);
+    }
 }
 
 .window-hotbar {
