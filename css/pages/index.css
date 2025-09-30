@@ -90,6 +90,24 @@ header {
     }
 }
 
+.sun-btn {
+    & #sunImg {
+        display: block;
+    }
+    & #moonImg {
+        display: none;
+    }
+}
+
+.moon-btn {
+    & #sunImg {
+        display: none;
+    }
+    & #moonImg {
+        display: block
+    }
+}
+
 footer {
     position: fixed;
     bottom: 0;
