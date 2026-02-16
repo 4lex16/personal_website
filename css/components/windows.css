@@ -1,0 +1,89 @@
+/* General CSS for each Window */
+.closable-window {
+    position: absolute;
+
+    width: 60em;
+    height: 40em;
+
+    color: black;
+    padding: 0.1em;
+
+    user-select: text;
+
+    background-color: var(--color-grey-00);
+
+    & .window-content {
+        width: calc(100% - 4em);
+        height: calc(100% - 6em);
+        padding: 1em;
+        margin: 1em;
+        color: var(--color-black-00);
+        background-color: var(--color-white-00);
+    }
+}
+
+.window-hotbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 1.5em;
+    padding: 0.2em 0.3em;
+    background-color: var(--color-blue-00);
+
+    user-select: none;
+
+    & .draggable-component {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        column-gap: 1em;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+
+        & img {
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+        & p {
+            font-weight: bold;
+
+            color: var(--color-white-01);
+        }
+    }
+
+    .close-me {
+        font-size: 10pt;
+        padding: 0.1em;
+        font-weight: bold;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: var(--color-grey-00);
+
+        border-top: solid 1px transparent;
+        border-left: solid 1px transparent;
+
+        border-bottom: solid 1px var(--color-black-00);
+        border-right: solid 1px var(--color-black-00);
+
+        &:active {
+            border-top: solid 1px var(--color-black-00);
+            border-left: solid 1px var(--color-black-00);
+
+            border-bottom: solid 1px transparent;
+            border-right: solid 1px transparent;
+
+        }
+    }
+}
+
+.window-open {
+    visibility: visible;
+}
+
+.window-closed {
+    visibility: hidden;
+}

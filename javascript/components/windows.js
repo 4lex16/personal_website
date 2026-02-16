@@ -1,6 +1,7 @@
 
 // Handles all the windows functionality
 // Opening, Moving, Closing
+const window_url = "./../../html/"
 
 export function Windows() {
     // Variables

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="color-scheme" content="light dark">
     <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/computer.ico">
+    <!--  All css stylesheets  -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/pages/index.css">
-    <link rel="icon" type="image/x-icon" href="./assets/icons/computer.ico">
+    <link rel="stylesheet" href="./css/components/windows.css">
 </head>
 <body>
 <header>
@@ -25,7 +27,7 @@
         </button>
         <button id="links-open" class="desktop-btn">
             <img src="./assets/pngs/world-4.png" alt="world icon"/>
-            Links
+            Socials
         </button>
         <button id="projects-open" class="desktop-btn">
             <img src="./assets/pngs/paint_old-0.png" alt="paint bucket icon"/>
@@ -51,8 +53,7 @@
         <button id="about-close" class="close-me">X</button>
     </div>
     <div class="window-content">
-        Hello!<br>
-        I am Computer Science Technology Student that goes to Vanier.
+        <iframe width="100%" height="100%" src="./html/about.html"></iframe>
     </div>
 </div>
 
@@ -65,8 +66,7 @@
         <button id="links-close" class="close-me">X</button>
     </div>
     <div class="window-content">
-        Hello!<br>
-        I am Computer Science Technology Student that goes to Vanier.
+        <iframe width="100%" height="100%" src="./html/socials.html"></iframe>
     </div>
 </div>
 
@@ -79,8 +79,7 @@
         <button id="projects-close" class="close-me">X</button>
     </div>
     <div class="window-content">
-        Hello!<br>
-        I am Computer Science Technology Student that goes to Vanier.
+        <iframe width="100%" height="100%" src="./html/projects.html"></iframe>
     </div>
 </div>
 
@@ -93,8 +92,7 @@
         <button id="faq-close" class="close-me">X</button>
     </div>
     <div class="window-content">
-        Hello!<br>
-        I am Computer Science Technology Student that goes to Vanier.
+        <iframe width="100%" height="100%" src="./html/faq.html"></iframe>
     </div>
 </div>
 
@@ -107,14 +105,18 @@
         <button id="contacts-close" class="close-me">X</button>
     </div>
     <div class="window-content">
-        Hello!<br>
-        I am Computer Science Technology Student that goes to Vanier.
+        <iframe width="100%" height="100%" src="./html/contacts.html"></iframe>
     </div>
 </div>
 
 
-
-<footer>&copy; 2025 Alexandru Cirlan</footer>
+<footer>
+    <button id="start-menu">
+        <img src="./assets/pngs/sun.png" alt="sun png"/>
+        <span>Start</span>
+    </button>
+    <p id="copyright">&copy; 2025 Alexandru Cirlan</p>
+</footer>
 <script type="module" src="javascript/main.js"></script>
 </body>
 </html>

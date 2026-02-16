@@ -91,6 +91,20 @@ header {
 }
 
 .sun-btn {
+
+    border: none;
+
+    transition: transform 1s;
+
+    &:hover {
+        border: none;
+        transform: rotate(45deg);
+    }
+    &:active {
+        border: none;
+        transform: rotate(90deg);
+    }
+
     & #sunImg {
         display: block;
     }
@@ -100,6 +114,19 @@ header {
 }
 
 .moon-btn {
+    border: none;
+    background-color: transparent;
+    transition: transform 1s;
+
+    &:hover {
+        border: none;
+        transform: rotate(-45deg);
+    }
+    &:active {
+        border: none;
+        transform: rotate(-90deg);
+    }
+
     & #sunImg {
         display: none;
     }
@@ -113,93 +140,54 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-}
 
-
-/* General CSS for each Window */
-.closable-window {
-    position: absolute;
-
-    width: 40em;
-    height: 30em;
-
-    color: black;
-    padding: 0.1em;
-
-    user-select: text;
-
-    background-color: var(--color-grey-00);
-
-    & .window-content {
-        width: calc(100% - 4em);
-        height: calc(100% - 6em);
-        padding: 1em;
-        margin: 1em;
-        color: var(--color-black-00);
-        background-color: var(--color-white-00);
-    }
-}
-
-.window-hotbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: -webkit-fill-available;
-    height: 1.5em;
-    padding: 0.2em 0.3em;
-    background-color: var(--color-blue-00);
+    justify-content: space-between;
 
-    user-select: none;
+    width: calc(max(100vw, 100%) - 1em);
+    height: 2.5em;
 
-    & .draggable-component {
-        display: flex;
-        flex-direction: row;
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
+    padding: 0.25em 0.5em;
+    border-top: solid 0.2em white;
 
-        & img {
-            width: 1em;
-            height: 1em;
-        }
+    background-color: var(--color-grey-00);
+}
 
-        & p {
-            font-weight: bold;
+#start-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0.2em 0.5em;
 
-            color: var(--color-white-01);
-        }
+    height: -webkit-fill-available;
+
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: var(--color-grey-00);
+
+    border-top: solid 0.1em gray;
+    border-left: solid 0.1em  gray;
+
+    border-bottom: solid 0.1em  var(--color-black-00);
+    border-right: solid 0.1em  var(--color-black-00);
+
+    &:active {
+        border-top: solid 0.1em  var(--color-black-00);
+        border-left: solid 0.1em var(--color-black-00);
+
+        border-bottom: solid 0.1em  gray;
+        border-right: solid 0.1em  gray;
     }
 
-    .close-me {
-        font-size: 10pt;
-        padding: 0.1em;
-        font-weight: bold;
-        width: 1.5em;
-        height: 1.5em;
-        -webkit-font-smoothing: none;
-        background-color: var(--color-grey-00);
-
-        border-top: solid 1px transparent;
-        border-left: solid 1px transparent;
-
-        border-bottom: solid 1px var(--color-black-00);
-        border-right: solid 1px var(--color-black-00);
-
-        &:active {
-            border-top: solid 1px var(--color-black-00);
-            border-left: solid 1px var(--color-black-00);
-
-            border-bottom: solid 1px transparent;
-            border-right: solid 1px transparent;
-
-        }
+    & img {
+        width: 2em;
+        height: 2em;
     }
 }
 
-.window-open {
-    visibility: visible;
-}
+#copyright {
 
-.window-closed {
-    visibility: hidden;
 }
